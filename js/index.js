@@ -1,4 +1,26 @@
-document.getElementById("header").setAttribute("class" , "bg-yellow");
+let counter = 0;
+document.getElementById("add-btn").addEventListener("click", function(){
 
-const attributes = document.getElementById("header").getAttribute("class");
-console.log(attributes);
+    counter ++;
+
+    const values = getInputValueInTextByID("input");
+    const parent = document.getElementById("table-body");
+
+    let tr = document.createElement("tr");
+    tr.innerHTML = `
+    
+    <td> ${counter} </td>
+    <td> ${values} </td>
+    <td>
+    <button class="btn btn-warning">Done</button>
+    <button class="btn btn-danger">Drop</button>
+    </td>
+    `;
+
+    parent.appendChild(tr);
+
+
+
+
+
+});
