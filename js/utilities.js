@@ -18,7 +18,7 @@ function getInputValueInNumberByID(inputID){
 
 function getElementValueInTextByID(inputID){
     let inputField =  document.getElementById(inputID);
-    let inputValue =  inputField.value;
+    let inputValue =  inputField.innerText;
 
     inputField.value = "";
 
@@ -27,7 +27,7 @@ function getElementValueInTextByID(inputID){
 
 function getElementValueInNumberByID(inputID){
     let inputField =  document.getElementById(inputID);
-    let inputValue =  parseFloat(inputField.value);
+    let inputValue =  parseFloat(inputField.innerText);
 
     inputField.value = "";
 
