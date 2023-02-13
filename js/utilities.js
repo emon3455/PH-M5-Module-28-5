@@ -34,3 +34,8 @@ function getElementValueInNumberByID(inputID){
     return inputValue;
 }
 
+function setElementValueByID(id , values){
+    let element  = document.getElementById(id);
+    element.innerText = values;
+}
+
