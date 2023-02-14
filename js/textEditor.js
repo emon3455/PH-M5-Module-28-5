@@ -36,19 +36,24 @@ document.getElementById("right").addEventListener("click" , function(){
 
 // justify align
 document.getElementById("justify").addEventListener("click" , function(){
+
     let text = document.getElementById("input");
     text.style.textAlign="justify";
+    
 });
 
 
 // Size:
-// document.getElementById("size").addEventListener("change" , function(){
+document.getElementById("size").addEventListener("change" , function(e){
 
-//     let fontSize = getInputValueInNumberByID("size");
-//     let text = document.getElementById("input");
-//     text.style.fontSize = fontSize+"px";
+    if(e.target.value < 14){
+        e.target.value = 14;
+    }
+    
+    const text = document.getElementById('input');
+    text.style.fontSize = `${e.target.value}px`;
 
-// });
+});
 
 
 
