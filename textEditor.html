@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/3dfa760d15.js" crossorigin="anonymous"></script>
+    
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1 class="text-center text-4xl font-semibold mt-4"> <span class="text-violet-600">Text</span> Editor</h1>
+    </header>
+
+
+    <main class="p-4 m-4 container w-full md:w-2/3 mx-auto bg-sky-300">
+
+        <section class="border-2 border-gray-700">
+            <div class="text-center p-2 md:flex md:justify-between md:p-4">
+
+               <div class="space-x-3">
+                <i class="fa-solid fa-bold hover:bg-sky-600 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-italic hover:bg-sky-600 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-underline hover:bg-sky-600 p-2 rounded-sm"></i>
+               </div>
+
+               <div class="space-x-3">
+                <i class="fa-solid fa-align-left hover:bg-sky-600 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-align-center hover:bg-sky-600 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-align-right hover:bg-sky-600 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-align-justify hover:bg-sky-600 p-2 rounded-sm"></i>
+               </div>
+
+               <div class="flex justify-center items-center h-full space-x-3">
+                    <input class="w-10 " type="number" name="" id="">
+                    <input type="color" name="" id="">
+               </div>
+
+            </div>
+
+            <hr class="mx-4 border border-gray-800">
+
+            <div class="p-4 w-full">
+                <textarea class="w-full" name="" id="" cols="60" rows="10"></textarea>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- utilities js file -->
+    <script src="./js/utilities.js"></script>
+
+    <!-- textEditor js file -->
+    <script src="./js/textEditor.js"></script>
+    
+</body>
+</html>
