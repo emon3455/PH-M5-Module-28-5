@@ -40,14 +40,26 @@ document.getElementById("justify").addEventListener("click" , function(){
     text.style.textAlign="justify";
 });
 
+
 // Size:
-// document.getElementById("size").addEventListener("click" , function(){
+// document.getElementById("size").addEventListener("change" , function(){
 
 //     let fontSize = getInputValueInNumberByID("size");
 //     let text = document.getElementById("input");
 //     text.style.fontSize = fontSize+"px";
 
 // });
+
+
+
+// color event:
+document.getElementById("color").addEventListener("change",function(event){
+     let text = document.getElementById("input");
+     text.style.color = event.target.value;
+});
+
+
+
 
 
 
