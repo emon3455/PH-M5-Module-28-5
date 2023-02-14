@@ -2,8 +2,6 @@ function getInputValueInTextByID(inputID){
     let inputField =  document.getElementById(inputID);
     let inputValue =  inputField.value;
 
-    inputField.value = "";
-
     return inputValue;
 }
 
@@ -37,5 +35,10 @@ function getElementValueInNumberByID(inputID){
 function setElementValueByID(id , values){
     let element  = document.getElementById(id);
     element.innerText = values;
+}
+
+function setInputValueByID(id , values){
+    let element  = document.getElementById(id);
+    element.value = values;
 }
 
